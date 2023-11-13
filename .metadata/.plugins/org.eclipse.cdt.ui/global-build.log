@@ -1,0 +1,38 @@
+14:04:31 **** Incremental Build of configuration Debug for project lab1_test ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F427xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "lab1_test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\User\STM32CubeIDE\workspace_1.7.0\lab1_test\STM32F427VITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab1_test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab1_test.elf
+ 
+arm-none-eabi-size   lab1_test.elf 
+arm-none-eabi-objdump -h -S  lab1_test.elf  > "lab1_test.list"
+arm-none-eabi-objcopy  -O binary  lab1_test.elf  "lab1_test.bin"
+   text	   data	    bss	    dec	    hex	filename
+   6404	     20	   1572	   7996	   1f3c	lab1_test.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab1_test.bin
+ 
+Finished building: lab1_test.list
+ 
+14:04:47 **** Incremental Build of configuration Debug for project lab1_test ****
+make -j8 all 
+arm-none-eabi-size   lab1_test.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6404	     20	   1572	   7996	   1f3c	lab1_test.elf
+Finished building: default.size.stdout
+ 
+13:41:13 **** Build of configuration Debug for project lab1_test ****
+make -j8 all 
+arm-none-eabi-size   lab1_test.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6404	     20	   1572	   7996	   1f3c	lab1_test.elf
+Finished building: default.size.stdout
+ 
+13:41:21 **** Incremental Build of configuration Debug for project lab1_test ****
+make -j8 all 
+arm-none-eabi-size   lab1_test.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6404	     20	   1572	   7996	   1f3c	lab1_test.elf
+Finished building: default.size.stdout
+ 

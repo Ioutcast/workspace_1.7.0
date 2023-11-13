@@ -1,0 +1,10 @@
+15:33:22 **** Incremental Build of configuration Debug for project lab1pvs ****
+make -j8 all 
+arm-none-eabi-size   lab1pvs.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5860	     20	   1572	   7452	   1d1c	lab1pvs.elf
+Finished building: default.size.stdout
+ 
+
+15:33:23 Build Finished. 0 errors, 0 warnings. (took 344ms)
+
